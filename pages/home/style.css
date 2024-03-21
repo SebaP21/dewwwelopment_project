@@ -81,7 +81,7 @@ header {
 	height: auto;
 	max-width: 40%;
 	z-index: 4;
-}
+} */
 .about-info-box img {
 	width: 100%;
 	height: auto;
@@ -117,57 +117,132 @@ header {
 }
 /* Offers Box */
 
+.offer-box {
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	background-color: var(--medium-light-color);
+}
+.offer-title {
+	text-align: center;
+	padding: 3em 0;
+	text-transform: uppercase;
+}
+.offer-title h2 {
+	font-size: 4rem;
+	margin: 0.8em 0;
+}
+.offer-title h4 {
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--h4-color);
+}
+.offer-cards-box {
+	padding: 0 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
 
-.offer-box{
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background-color: var(--medium-light-color);
+.offer-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: auto;
+	border: 1px solid var(--dark-color);
+	padding: 2em;
+	background-color: var(--light-color);
+	margin-bottom: 1em;
+}
+.offer-box-icons img {
+	height: auto;
+	width: 8vh;
+	top: 0;
+	left: 0;
+}
+.offer-card h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 0.8em auto;
+}
+.offer-description {
+	color: var(--h4-color);
+	padding-bottom: 1em;
+}
+
+/* cta */
+.cta {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+	width: 100%;
+	background-image: url(../../assets/img/Dewwwelopment-strona-w-kliku-krokach.jpg);
+	background-position: center;
+	background-size: cover;
+	font-size: 2rem;
+	color: var(--light-color);
+}
+.cta h3{
+	z-index: 10;
+	text-shadow: 0 0 3px var(--dark-main-color);
+}
+.counter{
+	color: var(--dark-main-color);
+	font-size: 3rem;
+}
+.cta-shadow{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image:linear-gradient(100deg,
+	var(--main-color) 0%,
+	var(--medium-light-color) 74%);	
+	opacity: 0.5;
+	z-index: 9;
+}
+
+/* steps-for-website */
+.steps-for-website {
+	display:grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,3fr));
+	/* grid-template-columns: repeat(3,1fr); */
+	row-gap: 3em;
+	column-gap: 3em;
+	width: 70%;
+	margin: 5em auto;
 
 }
-.offer-title{
-    text-align: center;
-    padding: 3em 0;
-    text-transform: uppercase;
+.steps-card {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	background-color: var(--light-color);
+	z-index: 5;
 }
-.offer-title h2{
-    font-size: 4rem;
-    margin: 0.8em 0;
+.steps-card img {
+	width: 30%;
+	border: 3px dotted var(--main-color);
+	border-radius: 50%;
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: var(--medium-light-color);
 }
-.offer-title h4{
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--h4-color)
+.steps-card:last-child img {
+	background-color: var(--main-color);
 }
-.offer-cards-box{
-    padding: 0 3em;
+/* decoration-gradient */
+.decoration-gradient{
+	position: relative;
+	height: 1em;
+	width: 100%;
+	background-image: linear-gradient(100deg,
+	var(--main-color) 0%,
+	var(--dark-main-color) 74%)
+}
 
-}
-
-.offer-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    height: 500px;
-    border: 1px solid var(--dark-color);
-    padding: 2em;
-    background-color: var(--light-color);
-}
-.offer-box-icons img{
-    height: auto;
-    width: 8vh;
-    top: 0;
-    left:0;
-    
-}
-.offer-card h3{
-    text-align: center;
-    font-size: 1.5rem;
-    margin: .8em auto;
-}
-.offer-description{
-    color: var(--h4-color);
-    padding-bottom: 1em;
-}
