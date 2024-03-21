@@ -14,3 +14,34 @@
     color: var(--dark-color);
 
 }
+.question-btn{
+    border:none;
+    background-color: transparent;
+    transition: color 0.2s;
+}
+.question-btn:hover{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.decoration-gradient{
+	position: relative;
+	height: 1em;
+	width: 100%;
+	background-image: linear-gradient(100deg,
+	var(--main-color) 0%,
+	var(--dark-main-color) 74%)
+}

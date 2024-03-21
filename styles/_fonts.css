@@ -16,3 +16,18 @@ p{
     font-family: 'Proza Libre',sans-serif;
     font-weight: bold;
 }
+
+h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--dark-main-color);
+}
+.question-btn{
+    font-family: 'Proza Libre',sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.faq-answer-text{
+    font-weight: normal;
+    color: var(--break-color);
+}

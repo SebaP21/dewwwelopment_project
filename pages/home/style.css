@@ -236,13 +236,46 @@ header {
 .steps-card:last-child img {
 	background-color: var(--main-color);
 }
-/* decoration-gradient */
-.decoration-gradient{
+/* FAQ */
+.faq{
 	position: relative;
-	height: 1em;
-	width: 100%;
-	background-image: linear-gradient(100deg,
-	var(--main-color) 0%,
-	var(--dark-main-color) 74%)
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 90vh;
+	width: 80%;
+	margin: 5em auto;
+
+}
+.faq-titles{
+	min-width: 20%;
+}
+.faq-titles h4{
+	margin-bottom: 2em;
+}
+.faq-titles h2{
+	font-size: 4rem;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+}
+.faq-titles .decoration-line{
+	background-color: var(--dark-main-color);
+	margin-bottom: 1em;
+}
+.faq-titles .faq-p{
+	color: var(--break-color);
 }
 
+.faq-body{
+	width: 60%;
+	margin-left: 5em;
+}
+.faq-question{
+	border: 1px solid var(--dark-color);
+	list-style: none;
+	padding: 1em;
+}
+.faq-answer-text{
+	margin-top: 2em;
+	padding: 0.5em 1em;
+	/* display: none; */
+}
