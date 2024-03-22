@@ -1,0 +1,8 @@
+@keyframes fade-left{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translate(0);
+    }
+}

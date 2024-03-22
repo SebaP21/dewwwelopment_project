@@ -64,3 +64,25 @@ h4 {
 		color: var(--light-color);
 	}
 }
+.support-card h3 {
+	font-size: 1.5rem;
+}
+.support-description p {
+	color: var(--break-color);
+}
+.footer a {
+	text-decoration: none;
+	font-family: "Proza Libre", sans-serif;
+	color: var(--dark-color);
+	padding: 1em;
+	transition: color 0.3s, transform 0.3s;
+}
+.footer a:hover {
+	color: var(--main-color);
+	transform: scale(1.1);
+}
+.footer a:focus {
+	outline: none;
+	color: var(--main-color);
+	text-decoration: underline;
+}
