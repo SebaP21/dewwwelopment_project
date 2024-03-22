@@ -33,3 +33,12 @@ h4 {
 	font-weight: normal;
 	color: var(--break-color);
 }
+.one-page-description h3{
+    font-size: 2rem;
+}
+.one-page-description h5{
+    font-size: 1.2rem;
+}
+.one-page-description p{
+    color: var(--break-color);
+}

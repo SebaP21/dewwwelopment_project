@@ -1,0 +1,68 @@
+@import url(../../styles/components.css);
+
+
+
+.offer-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 40vh;
+    background-image: url(../../assets/img/Dewwwelopment-oferta-projektowa.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.offer-header h2{
+    z-index: 1;
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.offer-header-shadow{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/img/shape-overlay-2\ \(1\).png);
+    opacity: 0.8;
+}
+.one-page{
+    position: relative;
+    background-color:var(--light-color);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 1em;
+    z-index: 1;
+}
+.section-h4-title{
+    color: var(--break-color);
+}
+.offer-wrapper{
+    margin: 2em;
+    display: flex;
+    background-color:var(--light-color);
+}
+.one-page-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 85vh;
+    height: auto;
+    margin-right: 4em;
+}
+
+.one-page-media{
+    margin-top: 2em;
+    background-color: var(--main-color);
+    height: 100%;
+}
+
+.one-page-media video{
+    margin: 2em 2em -2em -2em;
+    height: auto;
+    width: 100%;
+}
