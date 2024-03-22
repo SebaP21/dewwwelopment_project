@@ -1,33 +1,35 @@
-
-
-
 h1,
 h2,
 h3,
 h4,
-h5{
-    font-family: 'Proza Libre',sans-serif
+h5 {
+	font-family: "Proza Libre", sans-serif;
 }
 
-p{
-    font-family: 'Hind',sans-serif;
+p {
+	font-family: "Hind", sans-serif;
 }
-.btn{
-    font-family: 'Proza Libre',sans-serif;
-    font-weight: bold;
+.btn {
+	font-family: "Proza Libre", sans-serif;
+	font-weight: bold;
 }
 
-h4{
-    text-transform: uppercase;
-    font-weight: 500;
-    color: var(--dark-main-color);
+h4 {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--dark-main-color);
 }
-.question-btn{
-    font-family: 'Proza Libre',sans-serif;
-    font-weight: bold;
-    font-size: 1.1rem;
+.question-btn {
+	font-family: "Proza Libre", sans-serif;
+	font-weight: bold;
+	font-size: 1.1rem;
 }
-.faq-answer-text{
-    font-weight: normal;
-    color: var(--break-color);
+.contact-items{
+	a{
+		font-family: "Hind", sans-serif;
+	}
+}
+.faq-answer-text {
+	font-weight: normal;
+	color: var(--break-color);
 }

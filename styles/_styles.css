@@ -1,47 +1,42 @@
-.btn{
-    padding: 1em 2em;
-    font-size: 1rem;
-    color: var(--light-color);
-    background-color: var(--main-color);
-    border: 1px solid transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color .3s ,color .3s;
+.btn {
+	padding: 1em 2em;
+	font-size: 1rem;
+	color: var(--light-color);
+	background-color: var(--main-color);
+	border: 1px solid transparent;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
 }
-.btn:hover{
-    background-color: transparent;
-    border: 1px solid var(--main-color);
-    color: var(--dark-color);
-
+.btn:hover {
+	background-color: transparent;
+	border: 1px solid var(--main-color);
+	color: var(--dark-color);
 }
-.question-btn{
-    border:none;
-    background-color: transparent;
-    transition: color 0.2s;
+.question-btn {
+	border: none;
+	background-color: transparent;
+	transition: color 0.2s;
 }
-.question-btn:hover{
-    color: var(--main-color);
+.question-btn:hover {
+	color: var(--main-color);
+}
+.contact-form button{
+	width: 85%;
+	margin-top: 1em;
+}
+.contact-form button:hover{
+	background-color: var(--dark-main-color);
+	color: var(--light-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.decoration-gradient{
+.decoration-gradient {
 	position: relative;
 	height: 1em;
 	width: 100%;
-	background-image: linear-gradient(100deg,
-	var(--main-color) 0%,
-	var(--dark-main-color) 74%)
+	background-image: linear-gradient(
+		100deg,
+		var(--main-color) 0%,
+		var(--dark-main-color) 74%
+	);
 }

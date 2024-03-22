@@ -81,8 +81,8 @@ header {
 	height: auto;
 	max-width: 40%;
 	z-index: 4;
-} */
-.about-info-box img {
+}
+*/ .about-info-box img {
 	width: 100%;
 	height: auto;
 	object-fit: contain;
@@ -186,35 +186,36 @@ header {
 	font-size: 2rem;
 	color: var(--light-color);
 }
-.cta h3{
+.cta h3 {
 	z-index: 10;
 	text-shadow: 0 0 3px var(--dark-main-color);
 }
-.counter{
+.counter {
 	color: var(--dark-main-color);
 	font-size: 3rem;
 }
-.cta-shadow{
+.cta-shadow {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-image:linear-gradient(100deg,
-	var(--main-color) 0%,
-	var(--medium-light-color) 74%);	
+	background-image: linear-gradient(
+		100deg,
+		var(--main-color) 0%,
+		var(--medium-light-color) 74%
+	);
 	opacity: 0.5;
 	z-index: 9;
 }
 
 /* steps-for-website */
 .steps-for-website {
-	display:grid;
-	grid-template-columns: repeat(auto-fit,minmax(300px,3fr));
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
 	/* grid-template-columns: repeat(3,1fr); */
 	row-gap: 3em;
 	column-gap: 3em;
 	width: 70%;
 	margin: 5em auto;
-
 }
 .steps-card {
 	position: relative;
@@ -237,45 +238,137 @@ header {
 	background-color: var(--main-color);
 }
 /* FAQ */
-.faq{
+.faq {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	min-height: 90vh;
 	width: 80%;
 	margin: 5em auto;
-
 }
-.faq-titles{
+.faq-titles {
 	min-width: 20%;
 }
-.faq-titles h4{
+.faq-titles h4 {
 	margin-bottom: 2em;
 }
-.faq-titles h2{
+.faq-titles h2 {
 	font-size: 4rem;
 	font-weight: 600;
 	margin-bottom: 0.5em;
 }
-.faq-titles .decoration-line{
+.faq-titles .decoration-line {
 	background-color: var(--dark-main-color);
 	margin-bottom: 1em;
 }
-.faq-titles .faq-p{
+.faq-titles .faq-p {
 	color: var(--break-color);
 }
 
-.faq-body{
+.faq-body {
 	width: 60%;
 	margin-left: 5em;
 }
-.faq-question{
+.faq-question {
 	border: 1px solid var(--dark-color);
 	list-style: none;
 	padding: 1em;
 }
-.faq-answer-text{
+.faq-answer-text {
 	margin-top: 2em;
 	padding: 0.5em 1em;
 	/* display: none; */
+}
+/* Contact */
+.contact{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 90vh;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 3em;
+}
+.contact-titles{
+display: flex;
+flex-direction: column;
+margin-top: 5em;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+.contact-titles h2{
+	font-size: 4rem;
+	margin-top: 0.5em;
+}
+.decoration-line{
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1em;
+	background-color: var(--main-color);
+}
+.contact-wrapper{
+	height: auto;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	margin-top: 2em;
+}
+.contact-items a img{
+	width: 100%;
+}
+.contact-items{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	text-align: center;
+	flex-wrap: wrap;
+	height: 50vh;
+	width: 30%;
+	margin-top: 2em;
+	padding: 1em;
+	
+}
+.contact-items p{
+	color: var(--break-color);
+}
+.contact-items a{
+	color: var(--break-color);
+	text-decoration: none;
+	transition: color 0.3s , transform 0.3s;
+}
+.contact-items a:hover{
+	color: var(--main-color);
+	transform: scale(1.1);
+}
+.contact-form{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+	
+}
+.contact-form input{
+	width: 40%;
+	padding: 2em;
+	margin: 1em 2em;
+	background-color: var(--medium-light-color);
+	border: none;
+	font-family: "Hind", sans-serif;
+
+
+	/* margin: 0.5em auto 0 1em; */
+}
+.contact-form textarea{
+	min-height: 30%;
+	max-height: 30%;
+	padding: 1em 2em;
+	min-width: 85%;
+	max-width: 85%;
+	background-color: var(--medium-light-color);
+	border: none;
+	font-family: "Hind", sans-serif;
+
 }
