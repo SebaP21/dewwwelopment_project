@@ -21,11 +21,11 @@
 .question-btn:hover {
 	color: var(--main-color);
 }
-.contact-form button{
+.contact-form button {
 	width: 85%;
 	margin-top: 1em;
 }
-.contact-form button:hover{
+.contact-form button:hover {
 	background-color: var(--dark-main-color);
 	color: var(--light-color);
 }
@@ -39,4 +39,29 @@
 		var(--main-color) 0%,
 		var(--dark-main-color) 74%
 	);
+}
+.benefits-cta {
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1em 0;
+	height: 3em;
+	background-color: var(--light-color);
+	border-bottom: 2px solid var(--main-color);
+	border-top: 2px solid var(--main-color);
+	animation: cta-fade 1s;
+}
+@keyframes cta-fade {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		color: var(--accent-color);
+		transform: scale(1.05);
+	}
+	100% {
+		color: var(--main-color);
+	}
 }
