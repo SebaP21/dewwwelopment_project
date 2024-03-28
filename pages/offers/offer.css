@@ -77,8 +77,10 @@
 	margin: 2em 2em -2em -2em;
 	height: auto;
 	width: 100%;
+
 }
 .e-commerce h3,
+.e-commerce h5,
 .e-commerce p {
 	margin-bottom: 1em;
 }
@@ -201,11 +203,10 @@
 	max-width: 30%;
 	padding: 2em;
 	border: 1px solid var(--dark-color);
-	transition: border 0.3s, transform 0.3s;
+	transition: border 0.3s, box-shadow 0.3s;
 }
 .support-card:hover {
 	border: 1px solid var(--main-color);
-	transform: scale(1.02);
 	box-shadow: 0px 0px 10px var(--main-color);
 }
 .support-card h3 {

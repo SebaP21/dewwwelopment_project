@@ -6,3 +6,23 @@
         transform: translate(0);
     }
 }
+@keyframes fade-up{
+    0%{
+        transform: translateY(100%);
+    }100%{
+        transform: translateY(0);
+    }
+}
+@keyframes cta-fade {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		color: var(--accent-color);
+		transform: scale(1.05);
+	}
+	100% {
+		color: var(--main-color);
+	}
+}

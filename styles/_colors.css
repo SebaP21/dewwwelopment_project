@@ -1,5 +1,5 @@
 :root{
-    --main-color:#0f5c55;
+    --main-color:rgb(15, 92, 85);
     --dark-main-color:#07332f;
     --dark-color:#000000;
     --break-color:#7d7d7c;
@@ -8,4 +8,5 @@
     --medium-light-color:#e2e8f0;
     --darkest-light-color:#bfc0c0;
     --accent-color:#f5cb5c;
+    --nav-desktop-color:rgba(15,92,85,0.8);
 }

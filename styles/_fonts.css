@@ -75,6 +75,7 @@ h4 {
 	font-family: "Proza Libre", sans-serif;
 	color: var(--dark-color);
 	padding: 1em;
+	text-transform: uppercase;
 	transition: color 0.3s, transform 0.3s;
 }
 .footer a:hover {
@@ -85,4 +86,14 @@ h4 {
 	outline: none;
 	color: var(--main-color);
 	text-decoration: underline;
+}
+.nav-desktop a , .nav-desktop li{
+	text-transform: uppercase;
+	text-decoration: none;
+	list-style: none;
+	font-family: "Proza Libre", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 0 1em;
+	color: var(--light-color);
 }
