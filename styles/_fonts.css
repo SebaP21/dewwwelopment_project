@@ -67,7 +67,7 @@ h4 {
 .support-card h3 {
 	font-size: 1.5rem;
 }
-.support-description p {
+.support-description {
 	color: var(--break-color);
 }
 .footer a {
@@ -87,13 +87,23 @@ h4 {
 	color: var(--main-color);
 	text-decoration: underline;
 }
-.nav-desktop a , .nav-desktop li{
+.nav-desktop a,
+.nav-desktop li {
 	text-transform: uppercase;
 	text-decoration: none;
 	list-style: none;
 	font-family: "Proza Libre", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
-	margin: 0 1em;
+	margin: 0 0.5em;
+	color: var(--dark-color);
+}
+
+.nav-mobile a {
+	text-transform: uppercase;
+	font-family: "Proza Libre", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
 	color: var(--light-color);
+	text-shadow: 5px 5px 5px var(--main-color);
 }

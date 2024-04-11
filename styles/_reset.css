@@ -1,13 +1,13 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
 }
 ::selection {
-    color: var(--light-color);
-    background: var(--main-color);
-  }
-body{
-    position: relative;
+	color: var(--light-color);
+	background: var(--main-color);
+}
+body {
+	position: relative;
 }

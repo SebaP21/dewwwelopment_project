@@ -31,7 +31,6 @@
 	background-color: var(--light-color);
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 	margin: 1em;
 	z-index: 1;
@@ -77,7 +76,6 @@
 	margin: 2em 2em -2em -2em;
 	height: auto;
 	width: 100%;
-
 }
 .e-commerce h3,
 .e-commerce h5,
@@ -170,15 +168,13 @@
 	align-items: center;
 	text-align: center;
 	background-color: var(--light-color);
-	width: 100%;
+	max-width: 100%;
 	margin: 1em 2em 1em -2em;
 	z-index: 10;
 	box-shadow: 3px 3px 10px 5px var(--dark-main-color);
 	padding: 2em;
 	text-shadow: 0px 1px 1px var(--break-color);
 	animation: fade-left 1s;
-	/* transition: animation 2s; */
-	/* TRANSITION BEZ EVENTA? SPRAWDZIĆ */
 }
 /* Support */
 .support {
@@ -194,7 +190,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	width: 100%;
+	max-width: 100%;
 	margin: 2em auto;
 }
 .support-card {
@@ -228,12 +224,125 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    padding: 1em 0;
-	background-image: linear-gradient(180deg,
-    var(--light-color) 0%,
-    var(--medium-light-color) 74%
-);
+	padding: 1em 0;
+	background-image: linear-gradient(
+		180deg,
+		var(--light-color) 0%,
+		var(--medium-light-color) 74%
+	);
 }
 .footer-logo img {
 	width: 30%;
+}
+
+@media (max-width: 575.98px) {
+	.offer-header {
+		height: 30vh;
+	}
+	.offer-header h2 {
+		font-size: 3rem;
+	}
+	.offer-wrapper {
+		flex-direction: column;
+	}
+	.offer-description {
+		order: 3;
+	}
+	.offer-description h3 {
+		font-size: 1.5rem;
+		margin-top: 2em;
+	}
+	.offer-description p {
+		margin: 1em 0;
+	}
+	.offer-media {
+		order: 1;
+		margin-bottom: 2em;
+	}
+	.benefits-cta {
+		flex-direction: column;
+		min-height: 25vh;
+	}
+	.right {
+		margin: 0;
+	}
+	.right video {
+		margin: 1em 1em -1em -1em;
+	}
+	.left video {
+		margin: 1em 1em -1em 1em;
+	}
+	.right img {
+		margin: 1em 1em -1em -1em;
+	}
+	.advanced-project .offer-description {
+		min-height: 55vh;
+	}
+	.e-commerce h3 {
+		margin-top: 2em;
+	}
+	.courses-title {
+		width: 80%;
+	}
+	.courses h2 {
+		font-size: 3rem;
+	}
+	.courses h4 {
+		font-size: 1rem;
+	}
+	.courses-tasks {
+		flex-direction: column;
+		margin: 0;
+	}
+	.task-wrap {
+		padding: 1em 0;
+	}
+	.task-icon img {
+		width: 4em;
+	}
+	.task-box {
+		flex-direction: column;
+	}
+	.task-content {
+		margin-bottom: 1em;
+		min-width: 30vh;
+	}
+	.task-icon {
+		margin: 1em 2em;
+	}
+	.advanced-project {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.course-info-cta {
+		display: flex;
+		flex-direction: column;
+		height: 70vh;
+	}
+	.course-header-cta {
+		min-height: 35vh;
+		text-align: center;
+	}
+	.course-desctiption-cta {
+		min-height: 30vh;
+		max-width: 90%;
+		margin: -3em 2em;
+	}
+	.support h2 {
+		font-size: 2rem;
+	}
+	.support-cards-box {
+		flex-direction: column;
+		max-width: 90%;
+	}
+	.support-card {
+		max-width: 100%;
+		margin-bottom: 2em;
+	}
+	.support-card:last-child {
+		margin-bottom: 0;
+	}
+	.footer-logo img {
+		width: 50%;
+	}
 }
