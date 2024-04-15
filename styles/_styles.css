@@ -193,3 +193,7 @@
 .nav-mobile-btn:hover::after {
 	width: 8vh;
 }
+
+.nav-active {
+	color: var(--accent-color);
+}

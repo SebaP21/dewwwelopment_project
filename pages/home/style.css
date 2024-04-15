@@ -306,7 +306,12 @@ header {
 .faq-answer-text {
 	margin-top: 2em;
 	padding: 0.5em 1em;
-	/* display: none; */
+}
+.faq-answer{
+	display: none;
+}
+.faq-active{
+	display: block;
 }
 /* Contact */
 .contact {
@@ -458,23 +463,23 @@ header {
 	.faq-titles {
 		min-width: 100%;
 	}
-}
-.faq-answer-text {
-	padding: 0.5em;
-}
-.contact-titles h2 {
-	font-size: 2.5rem;
-}
-.contact-wrapper {
-	flex-direction: column;
-}
-.contact-items {
-	order: 2;
-	margin: 2em auto;
-	min-width: 100%;
-}
-.contact-form {
-	order: 1;
+	.faq-answer-text {
+		padding: 0.5em;
+	}
+	.contact-titles h2 {
+		font-size: 2.5rem;
+	}
+	.contact-wrapper {
+		flex-direction: column;
+	}
+	.contact-items {
+		order: 2;
+		margin: 2em auto;
+		min-width: 100%;
+	}
+	.contact-form {
+		order: 1;
+	}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
