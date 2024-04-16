@@ -271,7 +271,7 @@ header {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	min-height: 90vh;
+	min-height: 55vh;
 	max-width: 80%;
 	margin: 5em auto;
 }
@@ -309,6 +309,9 @@ header {
 }
 .faq-answer{
 	display: none;
+}
+.faq-answer-text:first-child{
+	display: block;
 }
 .faq-active{
 	display: block;
