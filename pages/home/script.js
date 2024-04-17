@@ -20,93 +20,56 @@ const closeMobileMenu = () => {
 const sections = document.querySelectorAll("section");
 const desktopNav = document.querySelector(".nav-desktop");
 
-const menuOptions = {
-	threshold: 0.99,
-}
 
-const menuObserver = new IntersectionObserver(entries => {
+const scrollValue = () => {
+	const menuOptions = {
+		threshold: 0.7
 
-	entries.forEach(e => {
-		if(e.isIntersecting){
-			// console.log(e);
-			desktopBgcRemover()
-			if(
-				e.target.id == "home" ||
-				e.target.id == "cta-steps" ||
-				e.target.id == "steps"
-			){
-				desktopNav.classList.add("main-color")
-			} else if(e.target.id == "aboutus"){
-				desktopNav.classList.add("accent-color")
-			} else if (
-				e.target.id =="all-offer" ||
-				e.target.id =="faq" ||
-				e.target.id =="contact"
-
-			){
-				desktopNav.classList.add("break-color")
-			}else{
-				return
+	};
+	const menuObserver = new IntersectionObserver((entries) => {
+		entries.forEach((e) => {
+			if (e.isIntersecting) {
+				desktopBgcRemover();
+				if (
+					(e.target.id == "home" && startNav == true) ||
+					e.target.id == "cta-steps" ||
+					e.target.id == "steps"
+				) {
+					desktopNav.classList.add("main-color");
+				} else if (e.target.id == "aboutus") {
+					desktopNav.classList.add("accent-color");
+				} else if (
+					e.target.id == "all-offer" ||
+					e.target.id == "faq" ||
+					e.target.id == "contact"
+				) {
+					desktopNav.classList.add("break-color");
+				} else {
+					desktopBgcRemover();
+				}
 			}
-		}
-	})
+		});
+	}, menuOptions);
+	sections.forEach((section) => {
+		menuObserver.observe(section);
+	});
+	let scrollCheck = window.scrollY;
+	let startNav;
+	if (scrollCheck > 30) {
+		startNav = true;
+	} else {
+		startNav = false;
+	}
+};
 
-
-
-}, menuOptions)
-
-sections.forEach(section =>{
-	menuObserver.observe(section)
-})
 const desktopBgcRemover = () => {
-	desktopNav.classList.remove("main-color")
-	desktopNav.classList.remove("accent-color")
-	desktopNav.classList.remove("break-color")
-	desktopNav.classList.remove("main-color")
-}
+	desktopNav.classList.remove("main-color");
+	desktopNav.classList.remove("accent-color");
+	desktopNav.classList.remove("break-color");
+	desktopNav.classList.remove("main-color");
+};
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// console.log(section);
-// console.log(desktopNavLinks);
-
-// window.onscroll = () => {
-// 	section.forEach((sec) => {
-// 		let top = window.scrollY;
-// 		let offset = sec.offsetTop;
-// 		let height = sec.offsetHeight;
-// 		let id = sec.getAttribute("id");
-
-// 		if (top >= offset && top < offset + height) {
-// 			desktopNavLinks.forEach((link) => {
-// 				link.classList.remove("nav-desktop-active-link");
-// 				document
-// 					.querySelector(".nav-desktop a[href*=" + id + "]")
-// 					.classList.add("nav-desktop-active-link");
-// 			});
-// 		}
-// 	});
-// };
 
 //FAQ ACCORDION
 function openFaqItems() {
@@ -142,21 +105,31 @@ let stepCounter = 1;
 
 const startCounter = (entry) => {
 	// console.log(entry[0].isIntersecting);
-
-	if (!entry[0].isIntersecting) {
+	
+	if (entry[0].isIntersecting==true) {
 		stepCounter = setInterval(() => {
 			if (stepCounter < 6) {
 				stepCounter++;
 				ctaCounter.textContent = `${stepCounter}`;
 			}
-		}, 300);
+		}, 400);
+	}else {
+		stepCounter=1
 	}
 };
-// console.log(ctaCounter.textContent);
+console.log(ctaCounter.textContent);
 
 const countObserver = new IntersectionObserver(startCounter, options);
-
 countObserver.observe(cta);
+
+
+
+
+
+
+
+
+
 
 mobileNavBtn.addEventListener("click", showMobileMenu);
 mobileNavLinks.forEach((item) =>
@@ -164,3 +137,5 @@ mobileNavLinks.forEach((item) =>
 );
 faqBtns.forEach((btn) => btn.addEventListener("click", openFaqItems));
 window.addEventListener("click", clickOutsideFaq);
+window.addEventListener("scroll", scrollValue);
+

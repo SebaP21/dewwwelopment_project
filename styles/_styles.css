@@ -73,11 +73,11 @@
 .nav-desktop {
 	display: none;
 	position: fixed;
-	padding: 1em 2em;
+	padding: 1em 1em;
 	width: 100%;
 	min-height: 4vh;
 	z-index: 1000;
-	transition: max-height 1s, padding 1s ,background-color 0.4s, justify-content 0.5s;
+	transition: max-height 0.5s, padding-left 0.8s ,background-color 0.5s, justify-content 0.5s;
 }
 .main-color {
 	background-color: var(--nav-main-color);
@@ -100,7 +100,8 @@
 .break-color {
 	background-color: var(--nav-break-color);
 	max-height: 9vh;
-	padding: 1em;
+	padding: 1em 0;
+	padding-left: 4em;
 }
 .break-color ul li a {
 	color: var(--light-color);
@@ -124,11 +125,17 @@
 }
 
 .nav-desktop a:hover {
-	border: 1px solid var(--light-color);
-}
-.accent-color a :hover{
 	border: 1px solid var(--dark-color);
 }
+.main-color ul li a:hover{
+	border: 1px solid var(--light-color);
+}
+.break-color ul li a:hover{
+	border: 1px solid var(--light-color);
+}
+/* .nav-desktop ul a :hover{
+	border: none;
+} */
 
 
 .nav-mobile {
