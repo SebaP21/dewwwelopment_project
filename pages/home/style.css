@@ -395,7 +395,7 @@ header {
 	padding: 2em;
 	margin: 1em auto;
 	background-color: var(--medium-light-color);
-	border: none;
+	border: 1px solid transparent;
 	font-family: "Hind", sans-serif;
 }
 .contact-form textarea {
@@ -406,9 +406,47 @@ header {
 	min-width: 90%;
 	max-width: 90%;
 	background-color: var(--medium-light-color);
-	border: none;
+	border: 1px solid transparent;
 	font-family: "Hind", sans-serif;
 }
+
+.alert{
+	margin-top: 2em;
+	color: var(--alert-color);
+	text-align: center;
+	width: 69%;
+	align-self: flex-end;
+	padding: 0em 2em;
+	margin-right: 3em;
+	font-weight: bold;
+}
+.form-result{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80%;
+	bottom: 0;
+	align-self: center;
+	background-color: var(--nav-main-color);
+	animation: fade-up 1s;
+
+}
+.form-active{
+	display: flex;
+}
+.result{
+	width: 80%;
+	height: 80%;
+	background-color: var(--light-color);
+	color: var(--dark-color);
+	font-size: 2rem;
+	text-align: center;
+	padding: 2em;
+
+}
+
 .footer-home {
 	background-image: linear-gradient(
 		180deg,

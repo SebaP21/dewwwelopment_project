@@ -33,6 +33,7 @@
 		<button class="nav-mobile-btn"></button>
 		<nav class="nav-mobile">
 			<ul>
+				<button class="close-mobile-btn"><img src="./assets/icons/xmark-solid.svg" alt=""></button>
 				<a href="#home"
 					><img
 						src="./assets/img/cropped-dewwwelopment-low-resolution-logo-black-on-transparent-background-3.png"
@@ -415,6 +416,7 @@
 					Zadzwoń lub skorzystaj z formularza kontaktowego i wyślij wiadomość
 				</p>
 			</div>
+			<div class="alert"><p class="alert-text" id="alert-text"></p></div>
 			<div class="contact-wrapper">
 				<div class="contact-items">
 					<a href="#home"
@@ -430,27 +432,34 @@
 				<div class="contact-form">
 					<input
 						type="text"
+						id="name"
 						placeholder="Imię"
 					/>
 					<input
 						type="text"
+						id="surname"
 						placeholder="Nazwisko"
 					/>
 					<input
 						type="text"
+						id="email"
 						placeholder="Adres e-mail"
 					/>
 					<input
 						type="text"
+						id="tel"
 						placeholder="Telefon"
 					/>
 					<textarea
-						name=""
-						id=""
+						name="message"
+						id="message"
 						placeholder="Wiadomość"
 					></textarea>
 					<button class="btn btn-send">Wyślij wiadomość</button>
 				</div>
+				<!-- <div class="form-result">
+					<p class="result">dsadsa</p>
+				</div> -->
 			</div>
 		</section>
 		<footer class="footer footer-home">
@@ -459,8 +468,11 @@
 			<a href="#faq">FAQ</a>
 			<a href="#privatepolicy">Polityka prywatności</a>
 
-			<p>Copyright © <span class="year-count">2024</span> DEWWWELOPMENT</p>
+			<p>Copyright © <span class="year-count"></span> DEWWWELOPMENT</p>
 		</footer>
 		<script src="./pages/home/script.js"></script>
+		<script src="./JS/nav.js"></script>
+		<script src="./JS/currentYear.js"></script>
+		<script src="./JS/form.js"></script>
 	</body>
 	</html>
